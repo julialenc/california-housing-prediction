@@ -125,7 +125,7 @@ Implemented data **drift detection** to ensure model reliability in production. 
   - Python 3.7+
   - Pandas, NumPy: Data analysis and numerical operations
   - Scikit-learn 1.0.1+: Machine learning models, preprocessing and evaluation
-  - Matplotlib, Seaborn: Data visualization
+  - Matplotlib: Data visualization
 
 **Deployment & Monitoring**:
   - Gradio: Interactive web interface for model deployment
