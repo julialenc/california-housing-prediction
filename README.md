@@ -64,8 +64,6 @@ The models were evaluated based on their Root Mean Squared Error (RMSE) on the t
 
 **Conclusion:** The Random Forest Regressor emerged as the best-performing model, offering a strong balance between predictive accuracy and generalization capabilities.
 
-
-    ![Housing Prices Simulator](./plots/predictor_1.png)
 ---
 
 ## 🛠️ Technologies Used
