@@ -24,8 +24,6 @@ california-housing-prediction/
 
 ├── dataset/ # Data files
 
-├── model/ # Trained models
-
 ├── plots/ # Visualizations
 
 └── README.md
