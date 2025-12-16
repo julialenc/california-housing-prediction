@@ -4,7 +4,7 @@
 
 This repository was created to support **Machine Learning training for PowerCoders Switzerland**.
 
-Based on a case study from Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron.
+Based on a case study from Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron (most of the code was used, but simplified and with additional explanations to the code added).
 
 ---
 
