@@ -21,12 +21,19 @@ Based on a case study from Hands-On Machine Learning with Scikit-Learn, Keras, a
 ## 📁 Project Structure
 
 california-housing-prediction/
+
 ├── notebooks/          # Jupyter notebooks
+
 │   ├── housing_analysis.ipynb       # Main analysis & training
+
 │   ├── deployment_gradio.ipynb      # Model deployment
+
 │   └── monitoring_basic.ipynb       # Drift detection
+
 ├── dataset/           # Data files
+
 ├── images /           # snippets from Interactive tool and Monitoring message 
+
 └── README.md
 
 ---
@@ -138,16 +145,3 @@ Monitoring - Ensuring long-term model reliability
 MLOps Basics - Complete ML lifecycle management
 
 ---
-
-## 👤 Author
-
-**Author's name**
-
-* Author's title*
-
----
-
-## 📅 Project Timeline
-
--   Start Date: December 15, 2024
--   Status: In Progress 🚧
