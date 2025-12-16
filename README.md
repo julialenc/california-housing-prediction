@@ -2,6 +2,8 @@
 
 Machine learning project predicting California house prices using regression models.
 
+Based on a case study from https://github.com/ageron/handson-ml3 
+
 ---
 
 ## 📋 Project Overview
@@ -64,6 +66,10 @@ The models were evaluated based on their Root Mean Squared Error (RMSE) on the t
 
 **Conclusion:** The Random Forest Regressor emerged as the best-performing model, offering a strong balance between predictive accuracy and generalization capabilities.
 
+---
+**Deployment**: 
+   * Interactive UI created in Gradio
+     
 ---
 
 ## 🛠️ Technologies Used
