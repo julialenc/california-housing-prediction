@@ -1,31 +1,32 @@
-# 🏠 California Housing Price Prediction
+## 🏠 California Housing Price Prediction
 
-Machine learning project predicting California house prices using regression models. The repo was created to support Machine Learning training for PowerCoders Switzerland.
+**A complete Machine Learning pipeline project for educational purposes**
 
-Based on a case study from https://github.com/ageron/handson-ml3 
+This repository was created to support **Machine Learning training for PowerCoders Switzerland**.
+
+Based on a case study from Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron.
 
 ---
 
 ## 📋 Project Overview
 
-**Goal:** Predict median house values in California districts.
+**Goal:** Predict median house values in California districts using machine learning regression models.
 
-**Dataset:** California Housing Dataset (1990 census data).
+**Dataset:** California Housing Dataset (1990 census data) - 20,640 observations, 9 features.
 
-**Methods:** This project employs several regression models including Linear Regression, Decision Tree Regressor, and Random Forest Regressor, along with comprehensive data preprocessing techniques such as imputation, outlier handling, categorical encoding, and feature scaling.
+**Methods:** This project demonstrates the complete ML lifecycle including data preprocessing, feature engineering, model training, deployment, and monitoring. It employs several regression models including Linear Regression, Decision Tree Regressor, and Random Forest Regressor, along with comprehensive data preprocessing techniques such as imputation, outlier handling, categorical encoding, and feature scaling.
 
 ---
 
 ## 📁 Project Structure
 
 california-housing-prediction/
-
-├── notebooks/ # Jupyter notebooks
-
-├── dataset/ # Data files
-
-├── plots/ # Visualizations
-
+├── notebooks/          # Jupyter notebooks
+│   ├── housing_analysis.ipynb       # Main analysis & training
+│   ├── deployment_gradio.ipynb      # Model deployment
+│   └── monitoring_basic.ipynb       # Drift detection
+├── dataset/           # Data files
+├── images /           # snippets from Interactive tool and Monitoring message 
 └── README.md
 
 ---
@@ -65,16 +66,76 @@ The models were evaluated based on their Root Mean Squared Error (RMSE) on the t
 **Conclusion:** The Random Forest Regressor emerged as the best-performing model, offering a strong balance between predictive accuracy and generalization capabilities.
 
 ---
+🚀 **Deployment**
+
+The trained Random Forest model was deployed using **Gradio**, creating an interactive web interface for real-time predictions.
+
+**Features**:
+🌐 Public Web Interface - Accessible via shareable Gradio link
+🤖 Real-time Predictions - Instant housing price estimates
+📊 Interactive Sliders - Easy input for all 9 features 
+💾 Models Versioning - Stored on Hugging Face Hub for reproducibility
+📱 Mobile-Friendly - Works on any device with a browser
+ 
+**Try It Out**: notebooks/gradio_deployment.ipynb 
+
+**Deployment Architecture**:
+1. Model Export: Trained model saved as housing_model.pkl
+2. Model Storage: Uploaded to Hugging Face Hub for versioning
+3. API Creation: Gradio interface with 9 input features
+4. Public Access: Generated shareable link (72-hour validity)
+
+Example Usage: Input features like median income, house age, and location coordinates to receive instant price predictions with confidence intervals.
+
+---
+📈 **Model Monitoring**:
+
+Implemented data **drift detection** to ensure model reliability in production. Monitoring helps identify when the model needs retraining due to changes in input data distribution.
+
+**Monitoring Approach**:
+1. Statistical Testing: Kolmogorov-Smirnov (KS) test for distribution comparison
+2. Visualization: Side-by-side histograms comparing training vs. production data
+3. Decision Framework: Automated alerts for drift severity levels
+
+**What We Monitor**:
+1. Data Drift: Changes in feature distributions
+2. Feature Statistics: Mean, median, standard deviation shifts
+3. Drift Severity: Percentage of features showing significant drift
+
+---
 
 ## 🛠️ Technologies Used
 
--   **Python 3.7+**
--   **Pandas**, **NumPy**: Libraries for data analysis and numerical operations.
--   **Scikit-learn 1.0.1+**: Machine learning library for model training, preprocessing, and evaluation.
--   **Matplotlib**: Library for data visualization.
--   **Google Colab**: Cloud-based environment for development and execution.
--   **`pathlib`**, **`tarfile`**, **`urllib.request`**: For file system operations and data downloading.
--   **`packaging`**: For version parsing.
+**Core Libraries**:
+  - Python 3.7+
+  - Pandas, NumPy: Data analysis and numerical operations
+  - Scikit-learn 1.0.1+: Machine learning models, preprocessing and evaluation
+  - Matplotlib, Seaborn: Data visualization
+
+**Deployment & Monitoring**:
+  - Gradio: Interactive web interface for model deployment
+  - Hugging Face Hub: Model versioning and storage
+  - SciPy: Statistical testing for drift detection
+
+**Development Environment**:
+  - Google Colab: Cloud-based Jupyter notebook environment
+  - GitHub: Version control and collaboration
+
+**Additional Tools**:
+pathlib, tarfile, urllib.request: File operations and data downloading
+packaging: Version parsing
+
+---
+🎓 **Learning Outcomes**
+
+This project demonstrates key machine learning concepts:
+
+Data Preprocessing Pipeline - Handling real-world messy data
+Feature Engineering - Creating meaningful predictors
+Model Comparison - Evaluating multiple algorithms
+Deployment - Taking models from notebook to production
+Monitoring - Ensuring long-term model reliability
+MLOps Basics - Complete ML lifecycle management
 
 ---
 
