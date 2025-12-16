@@ -77,6 +77,10 @@ The models were evaluated based on their Root Mean Squared Error (RMSE) on the t
 
 The trained Random Forest model was deployed using **Gradio**, creating an interactive web interface for real-time predictions.
 
+**Gradio Interface:**
+
+![Gradio Interface](images/predictor_1.png)
+
 **Features**:
 🌐 Public Web Interface - Accessible via shareable Gradio link
 🤖 Real-time Predictions - Instant housing price estimates
