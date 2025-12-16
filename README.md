@@ -103,6 +103,9 @@ Example Usage: Input features like median income, house age, and location coordi
 
 Implemented data **drift detection** to ensure model reliability in production. Monitoring helps identify when the model needs retraining due to changes in input data distribution.
 
+**Drift detection dashboard**
+![Monitoring Dashboard](images/model_monitoring.png)
+
 **Monitoring Approach**:
 1. Statistical Testing: Kolmogorov-Smirnov (KS) test for distribution comparison
 2. Visualization: Side-by-side histograms comparing training vs. production data
