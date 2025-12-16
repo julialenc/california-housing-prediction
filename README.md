@@ -1,6 +1,6 @@
 # 🏠 California Housing Price Prediction
 
-Machine learning project predicting California house prices using regression models.
+Machine learning project predicting California house prices using regression models. The repo was created to support Machine Learning training for PowerCoders Switzerland.
 
 Based on a case study from https://github.com/ageron/handson-ml3 
 
@@ -64,10 +64,8 @@ The models were evaluated based on their Root Mean Squared Error (RMSE) on the t
 
 **Conclusion:** The Random Forest Regressor emerged as the best-performing model, offering a strong balance between predictive accuracy and generalization capabilities.
 
----
-**Deployment**: 
-   * Interactive UI created in Gradio
-     
+
+    ![Housing Prices Simulator](./plots/predictor_1.png)
 ---
 
 ## 🛠️ Technologies Used
